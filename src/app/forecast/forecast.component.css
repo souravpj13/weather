@@ -1,0 +1,58 @@
+.w3-center {
+	width:11.1%;
+}
+
+@media screen and (max-width: 600px) {
+	.w3-center {
+		width:100%;
+		margin-top:10px;
+	}
+}
+
+.card {
+	display: block;
+	height: 340px;
+	background: rgb(0,0,0);
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(180deg, rgb(0,0,0,1) 0%, rgba(8,7,42,1));
+}
+
+.content {
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+.fa-sun-o {
+	font-size:25px; 
+	color:yellow;
+	filter: drop-shadow(2px 2px 10px yellow);
+}
+
+.fa-moon-o {
+	font-size:25px; 
+	color:white;
+	filter: drop-shadow(2px 2px 10px white);
+}
+
+.fa-cloud {
+	font-size:25px; 
+	color: rgb(104, 175, 197);
+	filter: drop-shadow(2px 2px 5px rgb(104, 175, 197));
+}
+
+.form-btn {
+	background: rgb(0,0,0);
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(180deg, rgb(0,0,0,1) 0%, rgba(8,7,42,1));
+}
+
+
+   .hidden-form{
+	 visibility:hidden;
+	 }
+   .show-form{
+   visibility: visible !important;
+   }
