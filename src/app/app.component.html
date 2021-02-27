@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">WEATHER</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -13,6 +13,45 @@
       </li>
     </ul>
   </div>
-</nav>
-
+</nav> -->
+<br><br>
+<div class="container">
+<div class="row">
+<div class="w3-center">
+  <div class="card"><br>
+      <div class="form">
+          <a class="form-btn" href="#" type="button" (click)=toggleDisplayDiv()>Click</a> 
+          <div class="searchform" [hidden]="!isShowDiv"> 
+          <input class="form-control" type="text"#userInput placeholder="City Name">
+              <div class="input-group-append" id="fold">
+                  <button class="input-group-text btn btn-outline-primary" id="fold_p" (click)="getCity(userInput.value)"><i class="fa fa-search"></i></button>
+              </div>
+          </div>
+      </div><br>
+      <div class="content" *ngIf="!weather.isNight">
+          <i class="fa fa-sun-o" aria-hidden="true"></i>
+      </div>
+      <div class="content" *ngIf="weather.isNight">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+      </div>
+      <br>
+      <div class="content" style="font-size: 12px;">
+          {{weather.temp_celcius}}°C                        
+      </div><br>
+      <div class="content" style="font-size: 12px;">
+          {{weather.temp_min}}°C / {{weather.temp_max}}°C
+      </div><br>
+      <div class="content">
+          {{weather.name}}, {{weather.sys.country}}
+      </div><br>
+      <div class="content" style="font-size: 12px;">
+          Humidity: {{weather.main.humidity}}%
+      </div><br>
+      <div class="content" style="font-size: 12px;">
+        Precipitation: {{weather.prescipitation}}%
+    </div><br>
+  </div>
+</div>
+</div>
+</div>
 <router-outlet></router-outlet>

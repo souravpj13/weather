@@ -1,0 +1,31 @@
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="w3-center">
+            <div class="card" *ngFor="let item of weather"><br>
+                <div class="content" *ngIf="!weather.isNight">
+                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                </div>
+                <div class="content" *ngIf="weather.isNight">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </div>
+                <br>
+                <div class="content" style="font-size: 12px;">
+                    {{item.name}}°C                        
+                </div><br>
+                <div class="content" style="font-size: 12px;">
+                    °C
+                </div><br>
+                <div class="content">
+                    
+                </div><br>
+                <div class="content" style="font-size: 12px;">
+                    Humidity: %
+                </div><br>
+                <div class="content" style="font-size: 12px; color:black;">
+                    Humidity: 
+                </div><br>
+            </div>
+        </div>
+    </div>
+</div>

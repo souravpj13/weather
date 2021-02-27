@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ForecastComponent } from './forecast/forecast.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ForecastComponent
+    ForecastComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
